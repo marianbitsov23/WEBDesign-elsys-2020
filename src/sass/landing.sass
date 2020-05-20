@@ -58,7 +58,7 @@ body, html
         .explore-button
             font-size: xx-large
             padding: 10px
-            background: none
+            text-decoration: none
             text-transform: uppercase
             color: white
             border: 2px solid $color-gray
@@ -68,73 +68,74 @@ body, html
                 outline: none
 
 .footer
-
     .footer-distributed
         background-color: $my-black
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12)
         box-sizing: border-box
         text-align: left
-        font: normal 16px sans-serif
-        padding: 1rem 1rem
+        text-transform: uppercase
+        padding: 1rem 2rem
+
+        .footer-left p
+            color: #8f9296
+            font-size: 14px
+            margin: 0
+
+        p.footer-links
+            font-size: 18px
+            font-weight: bold
+            color: #ffffff
+            margin: 0 0 10px
+            padding: 0
+            transition: ease .25s
+
+        p.footer-links a
+            display: inline-block
+            line-height: 1.8
+            text-decoration: none
+            color: inherit
+            transition: ease .25s
 
 
-    .footer-distributed .footer-left p
-        color: #8f9296
-        font-size: 14px
-        margin: 0
-
-    .footer-distributed p.footer-links
-        font-size: 18px
-        font-weight: bold
-        color: #ffffff
-        margin: 0 0 10px
-        padding: 0
-        transition: ease .25s
-
-    .footer-distributed p.footer-links a
-        display: inline-block
-        line-height: 1.8
-        text-decoration: none
-        color: inherit
-        transition: ease .25s
+        .footer-links a:before
+            content: "·"
+            font-size: 20px
+            left: 0
+            color: #fff
+            display: inline-block
+            padding-right: 5px
 
 
-    .footer-distributed .footer-links a:before
-        content: "·"
-        font-size: 20px
-        left: 0
-        color: #fff
-        display: inline-block
-        padding-right: 5px
+        .footer-links .link-1:before
+            content: none
 
+        .copyright
+            text-align: center
 
-    .footer-distributed .footer-links .link-1:before
-        content: none
+        .footer-right
+            float: right
+            margin-top: 6px
+            max-width: 180px
 
-    .footer-distributed .footer-right
-        float: right
-        margin-top: 6px
-        max-width: 180px
+        .footer-right a
+            display: inline-block
+            width: 35px
+            height: 35px
+            background-color: #33383b
+            border-radius: 2px
+            font-size: 20px
+            color: #ffffff
+            text-align: center
+            line-height: 35px
+            margin-left: 3px
+            transition:all .25s
 
-    .footer-distributed .footer-right a
-        display: inline-block
-        width: 35px
-        height: 35px
-        background-color: #33383b
-        border-radius: 2px
-        font-size: 20px
-        color: #ffffff
-        text-align: center
-        line-height: 35px
-        margin-left: 3px
-        transition:all .25s
+        .footer-right a:hover
+            transform:scale(1.1)
+            -webkit-transform:scale(1.1)
 
-    .footer-distributed .footer-right a:hover
-        transform:scale(1.1)
-        -webkit-transform:scale(1.1)
-
-    .footer-distributed p.footer-links a:hover
-        text-decoration:underline
+        p.footer-links a:hover
+            text-decoration:underline
 
     @media (max-width: 600px)
         .footer-distributed .footer-left, .footer-distributed .footer-right
@@ -146,6 +147,7 @@ body, html
 
         .footer-distributed .footer-left p.footer-links 
             line-height: 1.8
+
 
 @media screen and (max-width: 500px)
     .main-content

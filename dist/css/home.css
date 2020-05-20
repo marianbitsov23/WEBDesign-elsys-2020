@@ -1,0 +1,444 @@
+/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+/* line 13, src/sass/home.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 16, src/sass/home.sass */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 20, src/sass/home.sass */
+.site-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+/* line 25, src/sass/home.sass */
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  background-color: #222;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+/* line 36, src/sass/home.sass */
+.navbar .logoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 40, src/sass/home.sass */
+.navbar .logoWrapper img {
+  width: 30%;
+}
+
+/* line 43, src/sass/home.sass */
+.navbar .logoWrapper .stylish {
+  font-weight: bold;
+}
+
+/* line 46, src/sass/home.sass */
+.navbar .logoWrapper .logo {
+  padding-left: 4px;
+  color: #ee3d3a;
+}
+
+/* line 50, src/sass/home.sass */
+.navbar .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+/* line 54, src/sass/home.sass */
+.navbar .navigation li {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 60, src/sass/home.sass */
+.navbar .navigation .parent {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* line 64, src/sass/home.sass */
+.navbar .navigation .link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #ee3d3a;
+}
+
+/* line 72, src/sass/home.sass */
+.navbar .navigation .link:hover {
+  color: #a74332;
+}
+
+/* line 75, src/sass/home.sass */
+.navbar .navigation .dropdown-button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #ee3d3a;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+/* line 85, src/sass/home.sass */
+.navbar .navigation .dropdown-button .fa-arrow-up {
+  display: none;
+}
+
+/* line 88, src/sass/home.sass */
+.navbar .navigation .dropdown-button:hover {
+  color: #a74332;
+}
+
+/* line 91, src/sass/home.sass */
+.navbar .navigation .dropdown-button:focus {
+  outline: none;
+}
+
+/* line 94, src/sass/home.sass */
+.navbar .navigation .subnavigation {
+  text-align: center;
+  padding: 0;
+  display: none;
+  list-style-type: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #222;
+}
+
+/* line 102, src/sass/home.sass */
+.navbar .navigation .subnavigation .sublink {
+  text-decoration: none;
+  color: #69322d;
+}
+
+/* line 106, src/sass/home.sass */
+.navbar .navigation .subnavigation .sublink:hover {
+  color: #ee3d3a;
+}
+
+/* line 109, src/sass/home.sass */
+.navbar .navigation li a {
+  font-size: 1rem;
+}
+
+/* line 112, src/sass/home.sass */
+.main-content {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 118, src/sass/home.sass */
+.main-content .cars {
+  -webkit-box-shadow: inset 0 0 30px black;
+          box-shadow: inset 0 0 30px black;
+  border: 1px solid black;
+  -webkit-box-flex: 0.33;
+      -ms-flex: 0.33;
+          flex: 0.33;
+  background-position: 50% 69%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 130, src/sass/home.sass */
+.main-content .cars:hover {
+  opacity: 0.7;
+}
+
+/* line 133, src/sass/home.sass */
+.main-content .cars:hover a {
+  display: block;
+}
+
+/* line 136, src/sass/home.sass */
+.main-content .cars a {
+  display: none;
+  padding: 10px;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #f31b17;
+}
+
+/* line 146, src/sass/home.sass */
+.main-content .top-side {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* line 151, src/sass/home.sass */
+.main-content .top-side .car1 {
+  background-image: url(../../images/audi.jpg);
+}
+
+/* line 153, src/sass/home.sass */
+.main-content .top-side .car3 {
+  background-image: url(../../images/golf.jpg);
+}
+
+/* line 155, src/sass/home.sass */
+.main-content .top-side .car4 {
+  background-image: url(../../images/part.jpg);
+}
+
+/* line 158, src/sass/home.sass */
+.main-content .middle-side {
+  background-image: url(../../images/img3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10%;
+  opacity: 0.6;
+}
+
+/* line 168, src/sass/home.sass */
+.main-content .middle-side img {
+  height: 80%;
+}
+
+/* line 171, src/sass/home.sass */
+.main-content .bottom-side {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* line 176, src/sass/home.sass */
+.main-content .bottom-side .side-one {
+  background-image: url(../../images/tools.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* line 183, src/sass/home.sass */
+.main-content .bottom-side .side-two {
+  background-image: url(../../images/img2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+/* line 191, src/sass/home.sass */
+.footer .footer-distributed {
+  background-color: #222;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 1rem 1rem;
+}
+
+/* line 199, src/sass/home.sass */
+.footer .footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* line 204, src/sass/home.sass */
+.footer .footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  -webkit-transition: ease .25s;
+  transition: ease .25s;
+}
+
+/* line 212, src/sass/home.sass */
+.footer .footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: ease .25s;
+  transition: ease .25s;
+}
+
+/* line 220, src/sass/home.sass */
+.footer .footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* line 229, src/sass/home.sass */
+.footer .footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* line 232, src/sass/home.sass */
+.footer .footer-distributed .copyright {
+  text-align: center;
+}
+
+/* line 235, src/sass/home.sass */
+.footer .footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+/* line 240, src/sass/home.sass */
+.footer .footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+}
+
+@media (max-width: 600px) {
+  /* line 261, src/sass/home.sass */
+  .footer .footer-distributed .footer-left, .footer .footer-distributed .footer-right {
+    text-align: center;
+  }
+  /* line 264, src/sass/home.sass */
+  .footer .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  /* line 268, src/sass/home.sass */
+  .footer .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* line 274, src/sass/home.sass */
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 279, src/sass/home.sass */
+  .main-content .top-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 281, src/sass/home.sass */
+  .main-content .bottom-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="site-container">
+        <nav class="navbar">
+            <div class="logoWrapper">
+                <a href="/home.html">
+                    <img src="images/cartrek.png" alt="">
+                </a>
+            </div>
+            <ul class="navigation">
+                <li class="parent"><a class="link" href="#">Home</a></li>
+                <li class="parent"><a class="link" href="#">About</a></li>
+                <li class="parent"><a class="link" href="#">Parts</a></li>
+                <li class="parent">
+                    <button class="dropdown-button" onclick="showDropdown(this)" href="#">
+                        Vehicles 
+                        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </button>
+                    <ul class="subnavigation">
+                        <li class="parent">
+                            <button class="dropdown-button" onclick="showDropdown(this)" href="#">
+                                Cars
+                                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                            </button>
+                            <ul class="subnavigation">
+                                <li><a class="sublink" href="#">Volkswagen</a></li>
+                                <li><a class="sublink" href="#">Bmw</a></li>
+                                <li><a class="sublink" href="#">Audi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="dropdown-button" onclick="showDropdown(this)" href="#">
+                                Jeeps
+                                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                </button>
+                                <ul class="subnavigation">
+                                    <li><a class="sublink" href="#">Land Rover</a></li>
+                                    <li><a class="sublink" href="#">Toyota</a></li>
+                                    <li><a class="sublink" href="#">Jeep</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <button class="dropdown-button" onclick="showDropdown(this)" href="#">
+                                Trucks
+                                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                </button>
+                                <ul class="subnavigation">
+                                    <li><a class="sublink" href="#">Volvo</a></li>
+                                    <li><a class="sublink" href="#">Scania</a></li>
+                                    <li><a class="sublink" href="#">Renault</a></li>
+                                </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <div class="top-side">
+                <div class="cars car1">
+                    <a href="/vehicles.html">Audi</a>
+                </div>
+                <div class="cars car3">
+                    <a href="/vehicles.html">Volkswagen</a>
+                </div>
+                <div class="cars car4">
+                    <a href="/vehicles.html">Tunning</a>
+                </div>
+            </div>
+
+            <div class="middle-side">
+                <img src="images/cartrek.png" alt="">
+            </div>
+
+            <div class="bottom-side">
+                <div class="cars side-one">
+                    <a href="/parts.html">Parts</a>
+                </div>
+                <div class="cars side-two">
+                    <a href="/about.html">Where to find us?</a>
+    
+                </div>
+            </div>
+                
+        </main>
+        <div class="footer">
+            <footer class="footer-distributed">
+                <div class="footer-right">
+                    <a href="https://www.facebook.com/marian.bitsov/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/bitsov/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/marian-bitsov-000645176/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/marianbitsov23"><i class="fa fa-github"></i></a>
+                </div>
+    
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a class="link-1" href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Parts</a>
+                        <a href="#">Vehicles</a>
+                    </p>
+                    <p class="copyright">CARTREK All rights reserved &copy; 2020</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../js/dropdown-menu.js"></script>
+</body>
+</html>
