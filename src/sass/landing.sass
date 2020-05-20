@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700)
+$color-mandy: #d2513f
+$color-white: #ffffff
+$color-comet: #a74332
+$color-blue-yonder: #3d7889
+$color-jaffa: #69322d
+$color-clay: #003c4b
+$color-gray: #8d8d8d
+$my-black: #222
+$gradient: linear-gradient(to left, $color-jaffa, $color-blue-yonder)
+
+body, html
+  height: 100%
+  margin: 0
+  font-family: sans-serif
+
+.site-container
+    display: flex
+    flex-direction: column
+    height: 100%
+
+.header
+    background: $my-black
+    text-align: center
+    height: 10%
+    img
+        height: 80%
+
+.main-content
+    background: $my-black
+    display: flex
+    flex: 1
+    flex-direction: column
+
+    .side-one
+        padding-top: 3rem
+        text-align: center
+        text-transform: uppercase
+        flex: 1
+        background-image: url(../../images/img3.png)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        h1
+            color: white
+            opacity: 1
+
+    .side-two
+        flex: 4
+        background-image: url(../../images/img1.png)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .explore-button
+            font-size: xx-large
+            padding: 10px
+            background: none
+            text-transform: uppercase
+            color: white
+            border: 2px solid $color-gray
+            border-radius: 1rem
+
+            &:focus
+                outline: none
+
+.footer
+
+    .footer-distributed
+        background-color: $my-black
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12)
+        box-sizing: border-box
+        text-align: left
+        font: normal 16px sans-serif
+        padding: 1rem 1rem
+
+
+    .footer-distributed .footer-left p
+        color: #8f9296
+        font-size: 14px
+        margin: 0
+
+    .footer-distributed p.footer-links
+        font-size: 18px
+        font-weight: bold
+        color: #ffffff
+        margin: 0 0 10px
+        padding: 0
+        transition: ease .25s
+
+    .footer-distributed p.footer-links a
+        display: inline-block
+        line-height: 1.8
+        text-decoration: none
+        color: inherit
+        transition: ease .25s
+
+
+    .footer-distributed .footer-links a:before
+        content: "·"
+        font-size: 20px
+        left: 0
+        color: #fff
+        display: inline-block
+        padding-right: 5px
+
+
+    .footer-distributed .footer-links .link-1:before
+        content: none
+
+    .footer-distributed .footer-right
+        float: right
+        margin-top: 6px
+        max-width: 180px
+
+    .footer-distributed .footer-right a
+        display: inline-block
+        width: 35px
+        height: 35px
+        background-color: #33383b
+        border-radius: 2px
+        font-size: 20px
+        color: #ffffff
+        text-align: center
+        line-height: 35px
+        margin-left: 3px
+        transition:all .25s
+
+    .footer-distributed .footer-right a:hover
+        transform:scale(1.1)
+        -webkit-transform:scale(1.1)
+
+    .footer-distributed p.footer-links a:hover
+        text-decoration:underline
+
+    @media (max-width: 600px)
+        .footer-distributed .footer-left, .footer-distributed .footer-right
+            text-align: center
+
+        .footer-distributed .footer-right 
+            float: none
+            margin: 0 auto 20px
+
+        .footer-distributed .footer-left p.footer-links 
+            line-height: 1.8
+
+@media screen and (max-width: 500px)
+    .main-content
+        flex-direction: column
+
+        .side-one
+            padding: 0
+
+@-webkit-keyframes fade
+  from {opacity: .4}
+  to {opacity: 1}
+
+
+@keyframes fade
+  from {opacity: .4}
+  to {opacity: 1}

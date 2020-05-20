@@ -1,0 +1,228 @@
+/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+/* line 12, src/sass/landing.sass */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* line 17, src/sass/landing.sass */
+.site-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+/* line 22, src/sass/landing.sass */
+.header {
+  background: #222;
+  text-align: center;
+  height: 10%;
+}
+
+/* line 26, src/sass/landing.sass */
+.header img {
+  height: 80%;
+}
+
+/* line 29, src/sass/landing.sass */
+.main-content {
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 35, src/sass/landing.sass */
+.main-content .side-one {
+  padding-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: url(../../images/img3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 44, src/sass/landing.sass */
+.main-content .side-one h1 {
+  color: white;
+  opacity: 1;
+}
+
+/* line 48, src/sass/landing.sass */
+.main-content .side-two {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  background-image: url(../../images/img1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 58, src/sass/landing.sass */
+.main-content .side-two .explore-button {
+  font-size: xx-large;
+  padding: 10px;
+  background: none;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid #8d8d8d;
+  border-radius: 1rem;
+}
+
+/* line 67, src/sass/landing.sass */
+.main-content .side-two .explore-button:focus {
+  outline: none;
+}
+
+/* line 72, src/sass/landing.sass */
+.footer .footer-distributed {
+  background-color: #222;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 1rem 1rem;
+}
+
+/* line 81, src/sass/landing.sass */
+.footer .footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* line 86, src/sass/landing.sass */
+.footer .footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  -webkit-transition: ease .25s;
+  transition: ease .25s;
+}
+
+/* line 94, src/sass/landing.sass */
+.footer .footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: ease .25s;
+  transition: ease .25s;
+}
+
+/* line 102, src/sass/landing.sass */
+.footer .footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* line 111, src/sass/landing.sass */
+.footer .footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* line 114, src/sass/landing.sass */
+.footer .footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+/* line 119, src/sass/landing.sass */
+.footer .footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+}
+
+@media (max-width: 600px) {
+  /* line 140, src/sass/landing.sass */
+  .footer .footer-distributed .footer-left, .footer .footer-distributed .footer-right {
+    text-align: center;
+  }
+  /* line 143, src/sass/landing.sass */
+  .footer .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  /* line 147, src/sass/landing.sass */
+  .footer .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* line 151, src/sass/landing.sass */
+  .main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 154, src/sass/landing.sass */
+  .main-content .side-one {
+    padding: 0;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
