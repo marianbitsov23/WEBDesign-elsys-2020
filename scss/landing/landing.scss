@@ -1,0 +1,71 @@
+@import '../constants/colors';
+@import './landing-body';
+@import '../mixins/mobile-mixin';
+
+.navigation-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: $my-black;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    color: $light-red;
+    text-transform: uppercase;
+    overflow: hidden;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.logo-wrapper {
+    margin: 20px;
+    display: flex;
+
+    .stylish {
+        font-weight: bold;
+    }
+
+    .logo {
+        padding-left: 4px;
+        color: $light-blue;
+    }
+}
+
+
+.navigation {
+    margin: 20px;
+    display: flex;
+    list-style-type: none;
+    
+    .parent {
+        opacity: 1;
+        list-style-type: none;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        padding: 0 10px;
+        cursor: pointer;
+        
+        .link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            color: $light-red;
+            
+            &:hover {
+                color: $normal-red;
+            }
+        }
+        
+        ul {
+            display: none;
+        }
+        
+        .type-vehicles {
+            display: block;
+        }
+    }
+}
