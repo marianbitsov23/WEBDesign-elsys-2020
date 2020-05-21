@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700)
+$color-mandy: #ee3d3a
+$color-white: #ffffff
+$color-comet: #a74332
+$color-blue-yonder: #3d7889
+$color-jaffa: #69322d
+$color-clay: #003c4b
+$color-gray: #8d8d8d
+$color-opacity: #f31b17
+$my-black: #222
+$gradient: linear-gradient(to left, $color-jaffa, $color-blue-yonder)
+
+*
+    font-family: 'Roboto', sans-serif
+
+    
+body, html
+    height: 100%
+    margin: 0
+
+.site-container
+    display: flex
+    flex-direction: column
+    height: 100%
+
+.navbar
+    background: tomato
+
+.main-content
+    flex: 1
+    display: flex
+    flex-direction: column
+    background: $my-black
+
+    .top-side
+        background-image: url(../../images/starter.png)
+        background-position: 50% 51.5%
+        background-repeat: no-repeat
+        background-size: cover
+        display: flex
+        justify-content: center
+        align-items: center
+        
+        h1
+            margin-bottom: 8rem
+            color: whitesmoke
+            text-transform: uppercase
+            font-size: 3rem
+
+    .middle-side
+        display: flex
+        flex-direction: row
+
+        .side-one
+            flex: 1
+            background: green
+        .side-two
+            flex: 2
+            padding: 3rem
+            background-image: url(../../images/bg1.png)
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+            height: 65vh
+            display: flex
+            justify-content: center
+            align-items: center
+            
+            p
+                font-size: larger
+                color: whitesmoke
+                text-align: center
+    
+    .bottom-side
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        background: white
+
+        form
+            width: 80%
+
+        h3
+            text-transform: uppercase
+            text-align: center
+
+        input
+            background: none
+            border: 2px solid black
+            padding: 10px
+            width: 100%
+            outline: none
+            margin: 10px 0
+
+        .name-and-email
+            display: flex
+            justify-content: center
+            flex-direction: column
+            width: 95.75%
+
+            input
+                width: 100%
+
+        img
+            margin-top: 2rem
+
+        .subject-input
+            width: 95.75%
+
+        .message-input
+            border: 2px solid black
+            padding: 10px
+            display: block
+            width: 95.75%
+
+        .send-button
+            display: block
+            text-align: center
+            margin: 0 10px
+            margin-top: 10px
+            margin-bottom: 10px
+            background: $my-black
+            color: white
+            border: none
+            padding: 10px
+            width: 95.75%
+.footer
+    background: tomato
+
+@media screen and (max-width: 1000px)
+    .main-content
+        .middle-side
+            flex-direction: column
+        
+        .bottom-side
+            img
+                width: 100%
