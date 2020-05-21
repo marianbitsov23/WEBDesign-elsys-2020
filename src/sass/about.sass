@@ -1,19 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700)
-$color-mandy: #ee3d3a
-$color-white: #ffffff
-$color-comet: #a74332
-$color-blue-yonder: #3d7889
-$color-jaffa: #69322d
-$color-clay: #003c4b
-$color-gray: #8d8d8d
-$color-opacity: #f31b17
-$my-black: #222
-$gradient: linear-gradient(to left, $color-jaffa, $color-blue-yonder)
+@import './constants/_colors'
 
 *
     font-family: 'Roboto', sans-serif
 
-    
 body, html
     height: 100%
     margin: 0
@@ -23,26 +13,25 @@ body, html
     flex-direction: column
     height: 100%
 
-.navbar
-    background: tomato
-
+@import './constants/_navbar'
+ 
 .main-content
-    flex: 1
     display: flex
     flex-direction: column
+    flex: 1
     background: $my-black
 
     .top-side
         background-image: url(../../images/starter.png)
-        background-position: 50% 51.5%
+        background-position: 50% 46.5%
         background-repeat: no-repeat
         background-size: cover
         display: flex
         justify-content: center
         align-items: center
+        height: 30vh
         
         h1
-            margin-bottom: 8rem
             color: whitesmoke
             text-transform: uppercase
             font-size: 3rem
@@ -53,16 +42,28 @@ body, html
 
         .side-one
             flex: 1
-            background: green
+            background-image: url(../../images/gtr.png)
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+            opacity: 0.7
+            display: flex
+            justify-content: center
+            align-items: center
+
+            h3
+                margin-bottom: 11em
+                text-transform: uppercase
+
         .side-two
             flex: 2
-            padding: 3rem
+            padding: 5rem
             background-image: url(../../images/bg1.png)
             background-position: center
             background-repeat: no-repeat
             background-size: cover
-            height: 65vh
             display: flex
+            height: 70vh
             justify-content: center
             align-items: center
             
@@ -78,55 +79,69 @@ body, html
         flex-direction: column
         background: white
 
-        form
-            width: 80%
-
-        h3
-            text-transform: uppercase
-            text-align: center
-
-        input
-            background: none
-            border: 2px solid black
-            padding: 10px
-            width: 100%
-            outline: none
-            margin: 10px 0
-
-        .name-and-email
+        .contact-info
             display: flex
             justify-content: center
+            align-items: center
             flex-direction: column
-            width: 95.75%
+
+            img
+                box-shadow: 4px 5px 5px black
+                margin: 2rem
+
+            form
+                width: 80%
+
+            h3
+                text-transform: uppercase
+                text-align: center
 
             input
+                background: none
+                border: 2px solid black
+                padding: 10px
                 width: 100%
+                outline: none
+                margin: 10px 0
 
-        img
-            margin-top: 2rem
+            .name-and-email
+                display: flex
+                justify-content: center
+                flex-direction: column
+                width: 95.75%
 
-        .subject-input
-            width: 95.75%
+                input
+                    width: 100%
 
-        .message-input
-            border: 2px solid black
-            padding: 10px
-            display: block
-            width: 95.75%
+            .subject-input
+                width: 95.75%
 
-        .send-button
-            display: block
-            text-align: center
-            margin: 0 10px
-            margin-top: 10px
-            margin-bottom: 10px
-            background: $my-black
-            color: white
-            border: none
-            padding: 10px
-            width: 95.75%
-.footer
-    background: tomato
+            .message-input
+                border: 2px solid black
+                padding: 10px
+                display: block
+                width: 95.75%
+
+            .send-button
+                display: block
+                text-align: center
+                margin: 0 10px
+                margin-top: 10px
+                margin-bottom: 10px
+                background: $my-black
+                color: white
+                border: none
+                padding: 10px
+                width: 95.75%
+
+        .about-info
+            address
+                border: 1px solid black
+                padding: 20px
+                margin: 20px 0
+                text-align: center
+
+@import './constants/_footer'
 
 @media screen and (max-width: 1000px)
     .main-content
