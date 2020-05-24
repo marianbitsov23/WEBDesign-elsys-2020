@@ -1,18 +1,18 @@
 /*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-/* line 4, src/sass/home.sass */
+/* line 1, src/sass/constants/_flex-setup.sass */
 * {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 7, src/sass/home.sass */
+/* line 4, src/sass/constants/_flex-setup.sass */
 body, html {
   height: 100%;
   margin: 0;
 }
 
-/* line 11, src/sass/home.sass */
+/* line 8, src/sass/constants/_flex-setup.sass */
 .site-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,7 +47,7 @@ body, html {
 }
 
 /* line 14, src/sass/constants/_navbar.sass */
-.navbar .logoWrapper {
+.navbar .logo-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,17 +60,17 @@ body, html {
 }
 
 /* line 18, src/sass/constants/_navbar.sass */
-.navbar .logoWrapper img {
+.navbar .logo-wrapper img {
   width: 30%;
 }
 
 /* line 21, src/sass/constants/_navbar.sass */
-.navbar .logoWrapper .stylish {
+.navbar .logo-wrapper .stylish {
   font-weight: bold;
 }
 
 /* line 24, src/sass/constants/_navbar.sass */
-.navbar .logoWrapper .logo {
+.navbar .logo-wrapper .logo {
   padding-left: 4px;
   color: #ee3d3a;
 }
@@ -183,7 +183,7 @@ body, html {
   }
 }
 
-/* line 18, src/sass/home.sass */
+/* line 6, src/sass/home.sass */
 .main-content {
   background: black;
   display: -webkit-box;
@@ -198,7 +198,7 @@ body, html {
           flex-direction: column;
 }
 
-/* line 24, src/sass/home.sass */
+/* line 12, src/sass/home.sass */
 .main-content .cars {
   -webkit-box-shadow: inset 0 0 30px black;
           box-shadow: inset 0 0 30px black;
@@ -222,17 +222,17 @@ body, html {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 36, src/sass/home.sass */
+/* line 24, src/sass/home.sass */
 .main-content .cars:hover {
   opacity: 0.7;
 }
 
-/* line 39, src/sass/home.sass */
+/* line 27, src/sass/home.sass */
 .main-content .cars:hover a {
   display: block;
 }
 
-/* line 42, src/sass/home.sass */
+/* line 30, src/sass/home.sass */
 .main-content .cars a {
   display: none;
   padding: 10px;
@@ -241,10 +241,13 @@ body, html {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: #f31b17;
+  background: -webkit-gradient(linear, right top, left top, from(#69322d), to(#3d7889));
+  background: linear-gradient(to left, #69322d, #3d7889);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* line 52, src/sass/home.sass */
+/* line 42, src/sass/home.sass */
 .main-content .top-side {
   -webkit-box-flex: 2;
       -ms-flex: 2;
@@ -258,22 +261,22 @@ body, html {
           flex-direction: row;
 }
 
-/* line 57, src/sass/home.sass */
+/* line 47, src/sass/home.sass */
 .main-content .top-side .car1 {
   background-image: url(../../images/audi.jpg);
 }
 
-/* line 59, src/sass/home.sass */
+/* line 49, src/sass/home.sass */
 .main-content .top-side .car3 {
   background-image: url(../../images/golf.jpg);
 }
 
-/* line 61, src/sass/home.sass */
+/* line 51, src/sass/home.sass */
 .main-content .top-side .car4 {
   background-image: url(../../images/part.jpg);
 }
 
-/* line 64, src/sass/home.sass */
+/* line 54, src/sass/home.sass */
 .main-content .middle-side {
   background-image: url(../../images/img3.jpg);
   background-position: center;
@@ -292,12 +295,12 @@ body, html {
   opacity: 0.6;
 }
 
-/* line 74, src/sass/home.sass */
+/* line 64, src/sass/home.sass */
 .main-content .middle-side img {
   height: 80%;
 }
 
-/* line 77, src/sass/home.sass */
+/* line 67, src/sass/home.sass */
 .main-content .bottom-side {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -311,7 +314,7 @@ body, html {
           flex-direction: row;
 }
 
-/* line 82, src/sass/home.sass */
+/* line 72, src/sass/home.sass */
 .main-content .bottom-side .side-one {
   background-image: url(../../images/tools.jpg);
   background-position: center;
@@ -322,7 +325,7 @@ body, html {
           flex: 1;
 }
 
-/* line 89, src/sass/home.sass */
+/* line 79, src/sass/home.sass */
 .main-content .bottom-side .side-two {
   background-image: url(../../images/img2.jpg);
   background-position: center;
@@ -431,14 +434,20 @@ body, html {
 }
 
 @media screen and (max-width: 600px) {
-  /* line 100, src/sass/home.sass */
+  /* line 90, src/sass/home.sass */
+  .navbar .logoWrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* line 95, src/sass/home.sass */
   .main-content .top-side {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  /* line 102, src/sass/home.sass */
+  /* line 97, src/sass/home.sass */
   .main-content .bottom-side {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

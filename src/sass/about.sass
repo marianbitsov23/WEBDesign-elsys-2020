@@ -1,18 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700)
 @import './constants/_colors'
-
-*
-    font-family: 'Roboto', sans-serif
-
-body, html
-    height: 100%
-    margin: 0
-
-.site-container
-    display: flex
-    flex-direction: column
-    height: 100%
-
+@import './constants/_flex-setup'
 @import './constants/_navbar'
  
 .main-content
@@ -32,6 +20,9 @@ body, html
         height: 30vh
         
         h1
+            background: $gradient
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
             color: whitesmoke
             text-transform: uppercase
             font-size: 3rem
@@ -52,6 +43,9 @@ body, html
             align-items: center
 
             h3
+                background: $gradient
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
                 margin-bottom: 11em
                 text-transform: uppercase
 

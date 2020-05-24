@@ -1,6 +1,5 @@
 /*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 /* line 1, src/sass/constants/_flex-setup.sass */
 * {
   font-family: 'Roboto', sans-serif;
@@ -183,90 +182,7 @@ body, html {
   }
 }
 
-/* line 6, src/sass/landing.sass */
-.header {
-  background: #222;
-  text-align: center;
-  height: 10%;
-}
-
-/* line 10, src/sass/landing.sass */
-.header img {
-  height: 80%;
-}
-
-/* line 13, src/sass/landing.sass */
-.main-content {
-  background: #222;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-/* line 19, src/sass/landing.sass */
-.main-content .side-one {
-  padding-top: 3rem;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-image: url(../../images/img3.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* line 28, src/sass/landing.sass */
-.main-content .side-one h1 {
-  color: white;
-  opacity: 1;
-}
-
-/* line 32, src/sass/landing.sass */
-.main-content .side-two {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-  background-image: url(../../images/img1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-/* line 42, src/sass/landing.sass */
-.main-content .side-two .explore-button {
-  font-size: xx-large;
-  padding: 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  border: 2px solid #8d8d8d;
-  border-radius: 1rem;
-}
-
-/* line 51, src/sass/landing.sass */
-.main-content .side-two .explore-button:focus {
-  outline: none;
-}
-
-/* line 55, src/sass/landing.sass */
+/* line 2, src/sass/constants/_footer.sass */
 .footer .footer-distributed {
   background-color: #222;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -275,17 +191,17 @@ body, html {
           box-sizing: border-box;
   text-align: left;
   text-transform: uppercase;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
-/* line 63, src/sass/landing.sass */
+/* line 10, src/sass/constants/_footer.sass */
 .footer .footer-distributed .footer-left p {
   color: #8f9296;
   font-size: 14px;
   margin: 0;
 }
 
-/* line 68, src/sass/landing.sass */
+/* line 15, src/sass/constants/_footer.sass */
 .footer .footer-distributed p.footer-links {
   font-size: 18px;
   font-weight: bold;
@@ -296,7 +212,7 @@ body, html {
   transition: ease .25s;
 }
 
-/* line 76, src/sass/landing.sass */
+/* line 23, src/sass/constants/_footer.sass */
 .footer .footer-distributed p.footer-links a {
   display: inline-block;
   line-height: 1.8;
@@ -306,7 +222,7 @@ body, html {
   transition: ease .25s;
 }
 
-/* line 84, src/sass/landing.sass */
+/* line 31, src/sass/constants/_footer.sass */
 .footer .footer-distributed .footer-links a:before {
   content: "·";
   font-size: 20px;
@@ -316,24 +232,24 @@ body, html {
   padding-right: 5px;
 }
 
-/* line 93, src/sass/landing.sass */
+/* line 40, src/sass/constants/_footer.sass */
 .footer .footer-distributed .footer-links .link-1:before {
   content: none;
 }
 
-/* line 96, src/sass/landing.sass */
+/* line 43, src/sass/constants/_footer.sass */
 .footer .footer-distributed .copyright {
   text-align: center;
 }
 
-/* line 99, src/sass/landing.sass */
+/* line 46, src/sass/constants/_footer.sass */
 .footer .footer-distributed .footer-right {
   float: right;
   margin-top: 6px;
   max-width: 180px;
 }
 
-/* line 104, src/sass/landing.sass */
+/* line 51, src/sass/constants/_footer.sass */
 .footer .footer-distributed .footer-right a {
   display: inline-block;
   width: 35px;
@@ -348,49 +264,102 @@ body, html {
 }
 
 @media (max-width: 600px) {
-  /* line 125, src/sass/landing.sass */
+  /* line 72, src/sass/constants/_footer.sass */
   .footer .footer-distributed .footer-left, .footer .footer-distributed .footer-right {
     text-align: center;
   }
-  /* line 128, src/sass/landing.sass */
+  /* line 75, src/sass/constants/_footer.sass */
   .footer .footer-distributed .footer-right {
     float: none;
     margin: 0 auto 20px;
   }
-  /* line 132, src/sass/landing.sass */
+  /* line 79, src/sass/constants/_footer.sass */
   .footer .footer-distributed .footer-left p.footer-links {
     line-height: 1.8;
   }
 }
 
-@media screen and (max-width: 500px) {
-  /* line 137, src/sass/landing.sass */
-  .main-content {
+/* line 6, src/sass/vehicles.sass */
+.main-content {
+  background: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/* line 13, src/sass/vehicles.sass */
+.main-content .car-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 20, src/sass/vehicles.sass */
+.main-content .car-list .car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 20vh;
+  margin: 3rem 0;
+  background: white;
+  -webkit-box-shadow: 0 4px 8px 1px #222;
+          box-shadow: 0 4px 8px 1px #222;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 29, src/sass/vehicles.sass */
+.main-content .car-list .car:hover {
+  -webkit-box-shadow: 0 8px 16px 3px #222;
+          box-shadow: 0 8px 16px 3px #222;
+}
+
+/* line 32, src/sass/vehicles.sass */
+.main-content .car-list .car .container {
+  padding: 2px 16px;
+}
+
+@media screen and (max-width: 1100px) {
+  /* line 38, src/sass/vehicles.sass */
+  .main-content .car-list .car {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 3rem 2rem;
+    width: 70%;
   }
-  /* line 140, src/sass/landing.sass */
-  .main-content .side-one {
-    padding: 0;
-  }
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
+  /* line 43, src/sass/vehicles.sass */
+  .main-content .car-list img {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    width: 65%;
+    -webkit-box-shadow: 0 3px 8px 1px #222;
+            box-shadow: 0 3px 8px 1px #222;
   }
 }

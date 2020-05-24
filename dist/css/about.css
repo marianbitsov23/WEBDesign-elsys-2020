@@ -1,18 +1,18 @@
 /*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-/* line 4, src/sass/about.sass */
+/* line 1, src/sass/constants/_flex-setup.sass */
 * {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 7, src/sass/about.sass */
+/* line 4, src/sass/constants/_flex-setup.sass */
 body, html {
   height: 100%;
   margin: 0;
 }
 
-/* line 11, src/sass/about.sass */
+/* line 8, src/sass/constants/_flex-setup.sass */
 .site-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,7 +47,7 @@ body, html {
 }
 
 /* line 14, src/sass/constants/_navbar.sass */
-.navbar .logoWrapper {
+.navbar .logo-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,17 +60,17 @@ body, html {
 }
 
 /* line 18, src/sass/constants/_navbar.sass */
-.navbar .logoWrapper img {
+.navbar .logo-wrapper img {
   width: 30%;
 }
 
 /* line 21, src/sass/constants/_navbar.sass */
-.navbar .logoWrapper .stylish {
+.navbar .logo-wrapper .stylish {
   font-weight: bold;
 }
 
 /* line 24, src/sass/constants/_navbar.sass */
-.navbar .logoWrapper .logo {
+.navbar .logo-wrapper .logo {
   padding-left: 4px;
   color: #ee3d3a;
 }
@@ -183,7 +183,7 @@ body, html {
   }
 }
 
-/* line 18, src/sass/about.sass */
+/* line 6, src/sass/about.sass */
 .main-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,7 +198,7 @@ body, html {
   background: #222;
 }
 
-/* line 24, src/sass/about.sass */
+/* line 12, src/sass/about.sass */
 .main-content .top-side {
   background-image: url(../../images/starter.png);
   background-position: 50% 46.5%;
@@ -216,14 +216,18 @@ body, html {
   height: 30vh;
 }
 
-/* line 34, src/sass/about.sass */
+/* line 22, src/sass/about.sass */
 .main-content .top-side h1 {
+  background: -webkit-gradient(linear, right top, left top, from(#69322d), to(#3d7889));
+  background: linear-gradient(to left, #69322d, #3d7889);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: whitesmoke;
   text-transform: uppercase;
   font-size: 3rem;
 }
 
-/* line 39, src/sass/about.sass */
+/* line 30, src/sass/about.sass */
 .main-content .middle-side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,7 +238,7 @@ body, html {
           flex-direction: row;
 }
 
-/* line 43, src/sass/about.sass */
+/* line 34, src/sass/about.sass */
 .main-content .middle-side .side-one {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -255,13 +259,17 @@ body, html {
           align-items: center;
 }
 
-/* line 54, src/sass/about.sass */
+/* line 45, src/sass/about.sass */
 .main-content .middle-side .side-one h3 {
+  background: -webkit-gradient(linear, right top, left top, from(#69322d), to(#3d7889));
+  background: linear-gradient(to left, #69322d, #3d7889);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 11em;
   text-transform: uppercase;
 }
 
-/* line 58, src/sass/about.sass */
+/* line 52, src/sass/about.sass */
 .main-content .middle-side .side-two {
   -webkit-box-flex: 2;
       -ms-flex: 2;
@@ -283,14 +291,14 @@ body, html {
           align-items: center;
 }
 
-/* line 70, src/sass/about.sass */
+/* line 64, src/sass/about.sass */
 .main-content .middle-side .side-two p {
   font-size: larger;
   color: whitesmoke;
   text-align: center;
 }
 
-/* line 75, src/sass/about.sass */
+/* line 69, src/sass/about.sass */
 .main-content .bottom-side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,7 +316,7 @@ body, html {
   background: white;
 }
 
-/* line 82, src/sass/about.sass */
+/* line 76, src/sass/about.sass */
 .main-content .bottom-side .contact-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,25 +333,25 @@ body, html {
           flex-direction: column;
 }
 
-/* line 88, src/sass/about.sass */
+/* line 82, src/sass/about.sass */
 .main-content .bottom-side .contact-info img {
   -webkit-box-shadow: 4px 5px 5px black;
           box-shadow: 4px 5px 5px black;
   margin: 2rem;
 }
 
-/* line 92, src/sass/about.sass */
+/* line 86, src/sass/about.sass */
 .main-content .bottom-side .contact-info form {
   width: 80%;
 }
 
-/* line 95, src/sass/about.sass */
+/* line 89, src/sass/about.sass */
 .main-content .bottom-side .contact-info h3 {
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 99, src/sass/about.sass */
+/* line 93, src/sass/about.sass */
 .main-content .bottom-side .contact-info input {
   background: none;
   border: 2px solid black;
@@ -353,7 +361,7 @@ body, html {
   margin: 10px 0;
 }
 
-/* line 107, src/sass/about.sass */
+/* line 101, src/sass/about.sass */
 .main-content .bottom-side .contact-info .name-and-email {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,17 +376,17 @@ body, html {
   width: 95.75%;
 }
 
-/* line 113, src/sass/about.sass */
+/* line 107, src/sass/about.sass */
 .main-content .bottom-side .contact-info .name-and-email input {
   width: 100%;
 }
 
-/* line 116, src/sass/about.sass */
+/* line 110, src/sass/about.sass */
 .main-content .bottom-side .contact-info .subject-input {
   width: 95.75%;
 }
 
-/* line 119, src/sass/about.sass */
+/* line 113, src/sass/about.sass */
 .main-content .bottom-side .contact-info .message-input {
   border: 2px solid black;
   padding: 10px;
@@ -386,7 +394,7 @@ body, html {
   width: 95.75%;
 }
 
-/* line 125, src/sass/about.sass */
+/* line 119, src/sass/about.sass */
 .main-content .bottom-side .contact-info .send-button {
   display: block;
   text-align: center;
@@ -400,7 +408,7 @@ body, html {
   width: 95.75%;
 }
 
-/* line 138, src/sass/about.sass */
+/* line 132, src/sass/about.sass */
 .main-content .bottom-side .about-info address {
   border: 1px solid black;
   padding: 20px;
@@ -506,14 +514,14 @@ body, html {
 }
 
 @media screen and (max-width: 1000px) {
-  /* line 148, src/sass/about.sass */
+  /* line 142, src/sass/about.sass */
   .main-content .middle-side {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  /* line 152, src/sass/about.sass */
+  /* line 146, src/sass/about.sass */
   .main-content .bottom-side img {
     width: 100%;
   }

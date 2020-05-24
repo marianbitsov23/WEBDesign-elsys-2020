@@ -1,0 +1,48 @@
+@import './constants/_colors'
+@import './constants/_flex-setup'
+@import './constants/_navbar'
+@import './constants/_footer'
+
+.main-content
+    background: white
+    flex: 1
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+
+    .car-list
+        display: flex
+        justify-content: center
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: center
+
+        .car
+            display: flex
+            flex-direction: column
+            min-height: 20vh 
+            margin: 3rem 0
+            background: white
+            box-shadow: 0 4px 8px 1px $my-black
+            transition: 0.3s
+
+            &:hover
+                box-shadow: 0 8px 16px 3px $my-black
+
+            .container
+                padding: 2px 16px
+
+@media screen and (max-width: 1100px)
+    .main-content
+        .car-list
+            .car
+                flex-direction: column
+                margin: 3rem 2rem
+                width: 70%
+            
+            img
+                display: block
+                margin: auto
+                margin-top: 1rem
+                width: 65%
+                box-shadow: 0 3px 8px 1px $my-black
