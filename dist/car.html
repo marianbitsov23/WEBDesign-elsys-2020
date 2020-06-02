@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>Car</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/vehicles.css">
+    <link rel="stylesheet" href="../css/car.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/logo.png">
 </head>
@@ -66,67 +66,97 @@
                 </li>
             </ul>
         </nav>
-        <main class="main-content">
-            <div class="car-list">
+        <div class="main-content">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/m5.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/bmw2.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/bmw3.jpg" style="width:100%">
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="performance">
+                <h1>M POWER PERFORMANCE</h1>
+                <hr>
+            </div>
+            <div class="car-information">
+                <div class="text">
+                    <h1>HIGH PERFORMANCE IN TOP SHAPE</h1>
+                    <hr>
+                    <p>With an increased output of <strong>617 hp</strong>
+                        and a special chassis set-up, which also includes all relevant control systems, the 
+                        <strong> BMW M5 Competition </strong> takes the lead. Lying seven millimetres lower and with numerous
+                        characteristic accents in high-gloss black, it also underlines this <strong>visually</strong>.</p>
+                    <p>
+                        With just a few lines, the clear, M specific design of the BMW M5 signals consistent dynamism – from every angle. 
+                        BMW Individual high-gloss Shadow Line exclusively emphasises the athletic character. The laminated M5 Competition 
+                        designation at the side skirts is available as optional equipment.
+                    </p>
+                </div>
+                <div class="car-image"></div>
+            </div>
+            <div class="steering-wheel"></div>
+            <div class="bonus-text">
+                <p>
+                    The F90 M5 accelerates from a standstill to 100 km/h (62 mph) in 3.4 seconds, and to 200 km/h (124 mph) in 11.1 seconds.
+                    In Imperial measurements 60 mph (97 km/h) is reached in 2.8 seconds and 100 mph (161 km/h) in 6.6 seconds.
+                    The top speed is limited to 250 km/h (155 mph), and the delimited top speed is 305 km/h (190 mph) 
+                    with the optional M Driver's Package. Despite the added weight of the all-wheel drive components,
+                    the weight of the F90 M5 is approximately 40 kg (88 lb) lower than the previous generation M5.
+                    In December 2017, the F90 M5 set the Guinness World Records for "Longest continuous vehicle drift" and 
+                    "Longest twin vehicle drift (water assisted)" on a wet skidpad, with distances of 374 km (232 mi) 
+                    and 144 km (89 mi) respectively. The F90 M5 recorded a Nürburgring lap time of 7:38.92 in a test by Sport auto.
+                </p>
+                <p>
+                    The BMW M5 Competition model was introduced in August 2018, with power increased to 460 kW (617 hp) 
+                    at 6,000 rpm and torque remaining unchanged at 750 N⋅m (553 lb⋅ft) between 1,800–5,800 rpm.
+                    The official 0–100 km/h (0–62 mph) acceleration time was reduced by 0.1 seconds compared with the regular M5.
+                    Other changes include stiffer springs, increased front camber, 
+                    a 7 mm (0.3 in) lower ride height, revised wheels and a redesigned exhaust system with a particulate filter added.
+                    In a test by sport auto the M5 Competition lapped the Nürburgring in 7:35.90.
+                    Although advertised at 460 kW (617 hp) (measured at the crank) the M5 Competition in Car 
+                    and Driver's dyno test showed 460 kW (617 hp) at the wheels, suggesting a higher output than advertised.
+                </p>
+            </div>
+            <div class="more">
+                <h1>MORE INFORMATION ABOUT OUR OTHER PRODUCTS</h1>
+                <hr>
+            </div>
+            <div class="car-options">
                 <div class="car">
-                    <img src="images/golfr.jpg" alt="">
-                    <div class="container">
-                        <h4><b>Golf R</b></h4>
-                        <p>2019 VW Golf R is track-inspired with a turbocharged engine, while also providing an equally sophisticated ride.</p>
+                    <div class="card option1">
                     </div>
+                    <button>Find out more</button>
                 </div>
                 <div class="car">
-                    <img src="images/r8.jpg" alt="">
-                    <div class="container">
-                        <h4><b>Audi R8</b></h4>
-                        <p>The Audi R8 is a mid-engine, 2-seater sports car, which uses Audi's trademark quattro permanent all-wheel drive system.</p>
+                    <div class="card option2">
                     </div>
+                    <button>Find out more</button>
                 </div>
                 <div class="car">
-                    <img src="images/m5.jpg" alt="">
-                    <div class="container">
-                        <h4><b>Bmw M5 F90</b></h4>
-                        <p>M5 Competition, 
-                        with power increased to 617 hp at 6,000 rpm and 750 N⋅m torque.</p>
+                    <div class="card option3">
                     </div>
+                    <button>Find out more</button>
                 </div>
                 <div class="car">
-                    <img src="images/range.jpg" alt="">
-                    <div class="container">
-                        <h4><b>Range Rover Sport</b></h4>
-                        <p>The Range Rover Sport is a British luxury mid-size SUV made by Land Rover.</p>
+                    <div class="card option4">
                     </div>
-                </div>
-                <div class="car">
-                    <img src="images/toyota.jpg" alt="">
-                    <div class="container">
-                        <h4><b>Toyota Tacoma TRD</b></h4>
-                        <p>The Toyota Tacoma is a pickup truck manufactured in the U.S.</p>
-                    </div>
-                </div>
-                <div class="car">
-                    <img src="images/cherokee.jpg" alt="">
-                    <div class="container">
-                        <h4><b>Jeep Grand Cherokee</b></h4>
-                        <p>The Jeep Grand Cherokee is a range of mid-size SUVs produced by the American manufacturer Jeep.</p>
-                    </div>
-                </div>
-                <div class="car">
-                    <img src="images/volvo.jpg" alt="">
-                    <div class="container">
-                        <h4><b>Volvo VNL</b></h4>
-                        <p>The Volvo VNL is built for the needs of today’s — and tomorrow’s — long-haul trucking operations.</p>
-                    </div>
-                </div>
-                <div class="car">
-                    <img src="images/scania.jpg" alt="">
-                    <div class="container">
-                        <h4><b>Scania R</b></h4>
-                        <p>Scania is a major Swedish manufacturer of commercial vehicles</p>
-                    </div>
+                    <button>Find out more</button>
                 </div>
             </div>
-        </main>
+        </div>
         <div class="footer">
             <footer class="footer-distributed">
                 <div class="footer-right">
@@ -149,5 +179,6 @@
         </div>
     </div>
     <script src="../js/dropdown-menu.js"></script>
+    <script src="../js/slideshow.js"></script>
 </body>
 </html>

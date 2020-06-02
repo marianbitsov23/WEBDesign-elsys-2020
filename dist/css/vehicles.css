@@ -8,10 +8,11 @@
 /* line 4, src/sass/constants/_flex-setup.sass */
 body, html {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
-/* line 8, src/sass/constants/_flex-setup.sass */
+/* line 9, src/sass/constants/_flex-setup.sass */
 .site-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,6 +180,10 @@ body, html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  /* line 93, src/sass/constants/_navbar.sass */
+  .navbar .logo-wrapper {
+    text-align: center;
   }
 }
 

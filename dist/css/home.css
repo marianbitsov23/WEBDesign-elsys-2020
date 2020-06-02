@@ -9,10 +9,11 @@
 /* line 4, src/sass/constants/_flex-setup.sass */
 body, html {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
-/* line 8, src/sass/constants/_flex-setup.sass */
+/* line 9, src/sass/constants/_flex-setup.sass */
 .site-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,6 +182,10 @@ body, html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  /* line 93, src/sass/constants/_navbar.sass */
+  .navbar .logo-wrapper {
+    text-align: center;
+  }
 }
 
 /* line 6, src/sass/home.sass */
@@ -218,36 +223,37 @@ body, html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 /* line 24, src/sass/home.sass */
 .main-content .cars:hover {
-  opacity: 0.7;
+  background: #010101;
+  background-position: 50% 0%;
 }
 
-/* line 27, src/sass/home.sass */
+/* line 28, src/sass/home.sass */
 .main-content .cars:hover a {
   display: block;
 }
 
-/* line 30, src/sass/home.sass */
+/* line 31, src/sass/home.sass */
 .main-content .cars a {
   display: none;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 1rem;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1.5rem;
-  background: -webkit-gradient(linear, right top, left top, from(#69322d), to(#3d7889));
-  background: linear-gradient(to left, #69322d, #3d7889);
+  background: -webkit-gradient(linear, right top, left top, from(#f31b17), to(#3d7889));
+  background: linear-gradient(to left, #f31b17, #3d7889);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* line 42, src/sass/home.sass */
+/* line 43, src/sass/home.sass */
 .main-content .top-side {
   -webkit-box-flex: 2;
       -ms-flex: 2;
@@ -261,22 +267,27 @@ body, html {
           flex-direction: row;
 }
 
-/* line 47, src/sass/home.sass */
+/* line 48, src/sass/home.sass */
 .main-content .top-side .car1 {
   background-image: url(../../images/audi.jpg);
 }
 
-/* line 49, src/sass/home.sass */
+/* line 50, src/sass/home.sass */
 .main-content .top-side .car3 {
-  background-image: url(../../images/golf.jpg);
+  background-image: url(../../images/golfr.jpg);
 }
 
-/* line 51, src/sass/home.sass */
+/* line 52, src/sass/home.sass */
 .main-content .top-side .car4 {
   background-image: url(../../images/part.jpg);
 }
 
 /* line 54, src/sass/home.sass */
+.main-content .top-side .car4:hover {
+  background-position: 70% -7%;
+}
+
+/* line 57, src/sass/home.sass */
 .main-content .middle-side {
   background-image: url(../../images/img3.jpg);
   background-position: center;
@@ -295,12 +306,12 @@ body, html {
   opacity: 0.6;
 }
 
-/* line 64, src/sass/home.sass */
+/* line 67, src/sass/home.sass */
 .main-content .middle-side img {
   height: 80%;
 }
 
-/* line 67, src/sass/home.sass */
+/* line 70, src/sass/home.sass */
 .main-content .bottom-side {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -314,12 +325,9 @@ body, html {
           flex-direction: row;
 }
 
-/* line 72, src/sass/home.sass */
+/* line 75, src/sass/home.sass */
 .main-content .bottom-side .side-one {
   background-image: url(../../images/tools.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -327,13 +335,15 @@ body, html {
 
 /* line 79, src/sass/home.sass */
 .main-content .bottom-side .side-two {
-  background-image: url(../../images/img2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(../../images/travel.jpg);
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+/* line 82, src/sass/home.sass */
+.main-content .bottom-side .side-two:hover {
+  background-position: 50% 43%;
 }
 
 /* line 2, src/sass/constants/_footer.sass */
@@ -434,20 +444,14 @@ body, html {
 }
 
 @media screen and (max-width: 600px) {
-  /* line 90, src/sass/home.sass */
-  .navbar .logoWrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  /* line 95, src/sass/home.sass */
+  /* line 89, src/sass/home.sass */
   .main-content .top-side {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  /* line 97, src/sass/home.sass */
+  /* line 91, src/sass/home.sass */
   .main-content .bottom-side {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

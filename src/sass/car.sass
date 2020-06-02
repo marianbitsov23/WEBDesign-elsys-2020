@@ -1,0 +1,225 @@
+@import './constants/_colors'
+@import './constants/_flex-setup'
+@import './constants/_navbar'
+@import url(//db.onlinewebfonts.com/c/3d801c16769ba2dd6344be073c5bb938?family=TradeGothicLTW01-Light);
+
+.main-content
+    flex: 1
+    display: flex
+    flex-direction: column
+
+    .slideshow-container
+        flex: 0.5
+        width: 100% 
+        position: relative
+        margin: auto
+        flex-grow: 20
+
+
+        .mySlides 
+            display: none
+            img
+                box-shadow: 0 4px 8px 2px $my-black
+
+
+        .prev, .next 
+            cursor: pointer
+            position: absolute
+            top: 50%
+            width: auto
+            margin-top: -22px
+            padding: 16px
+            color: $color-blue-yonder
+            font-weight: bold
+            font-size: 18px
+            transition: 0.6s ease
+            border-radius: 0 3px 3px 0
+            user-select: none
+
+
+        .next
+            color: $color-mandy
+            right: 0
+            border-radius: 3px 0 0 3px
+
+
+        .prev:hover, .next:hover
+            color: white 
+            background-color: rgba(0,0,0,0.8)
+
+
+        .text 
+            color: #f2f2f2
+            font-size: 15px
+            padding: 8px 12px
+            position: absolute
+            bottom: 8px
+            width: 100%
+            text-align: center
+
+
+        .numbertext 
+            color: #f2f2f2
+            font-size: 12px
+            padding: 8px 12px
+            position: absolute
+            top: 0
+
+
+        .dot 
+            cursor: pointer
+            height: 15px
+            width: 15px
+            margin: 0 2px
+            background-color: #bbb
+            border-radius: 50%
+            display: inline-block
+            transition: background-color 0.6s ease
+
+
+        .active, .dot:hover 
+            background-color: #717171
+
+        .fade 
+            -webkit-animation-name: fade
+            -webkit-animation-duration: 1.5s
+            animation-name: fade
+            animation-duration: 1.5s
+    
+    .performance
+        margin-top: 1rem
+        text-align: center
+        padding: 2rem
+        background: $my-black
+        color: white
+        
+        hr
+            width: 10%
+
+    .steering-wheel
+        height: 90vh
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        background-image: url(../../images/bmwheel.jpg)
+
+    .bonus-text
+        display: flex
+        flex: 1
+        align-items: center
+        padding: 2rem
+        p
+            margin: 0 2rem
+            font-family: "Trade Gothic LT W01 Light", sans-serif
+            color: $text-gray
+            text-align: justify
+
+    .car-information
+        display: flex
+
+        .text
+            padding: 2rem
+            font-family: "Trade Gothic LT W01 Light", sans-serif
+            color: $text-gray
+            text-align: center
+            flex: 0.5
+
+            hr
+                border-top: 2px solid $text-gray
+                width: 20%
+        
+        .car-image
+            flex: 0.5
+            min-height: 50vh
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+            background-image: url(../../images/competition.jpg)
+
+    .more
+        text-align: center
+        color: $text-gray
+
+        hr
+            border-top: 2px solid $text-gray
+            width: 20%
+
+    .car-options
+        flex: 1
+        display: flex
+        margin: 2rem
+
+        .car
+            flex: 0.25
+            display: flex
+            flex-direction: column
+            height: 50vh
+            background: #C6CBCE
+            border: 0.5px solid $my-black
+            margin: 0 1rem
+
+            .card
+                height: 30vh
+                background-position: center
+                background-repeat: no-repeat
+                background-size: cover
+            
+            button
+                margin-top: 2rem
+                width: 60%
+                margin: auto
+                padding: 1rem
+                color: $text-gray
+                font-weight: bolder
+                background: none
+                border: 2px solid $text-gray
+                text-transform: uppercase
+                border-radius: 0
+                transition: all 0.3s ease-in-out
+
+                &:hover
+                    background: $text-gray
+                    color: white
+
+                &:focus
+                    outline: none
+
+            .option1
+                background-image: url(../../images/golfr.jpg)
+            .option2
+                background-image: url(../../images/r8.jpg)
+            .option3
+                background-image: url(../../images/range.jpg)
+            .option4
+                background-image: url(../../images/cherokee.jpg)
+
+@import './constants/_footer'
+
+@media screen and (max-width: 1000px)
+    .main-content
+        .car-information
+            flex-direction: column-reverse
+
+        .bonus-text
+            flex-direction: column
+            p
+                margin: 1rem
+
+        .car-options
+            flex-direction: column
+
+            .car
+                margin: 1rem 0
+
+@-webkit-keyframes fade 
+  from 
+    opacity: .4
+  to 
+    opacity: 1
+
+
+@keyframes fade 
+  from
+    opacity: .4
+  to 
+    opacity: 1
