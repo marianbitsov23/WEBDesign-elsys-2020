@@ -69,6 +69,7 @@ var lazypipe = require('lazypipe');
 var rename = require('gulp-rename');
 var header = require('gulp-header');
 var package = require('./package.json');
+var babel = require('gulp-babel');
 
 // Scripts
 var jshint = require('gulp-jshint');
@@ -93,6 +94,16 @@ var browserSync = require('browser-sync');
 /**
  * Gulp Tasks
  */
+
+// Babel
+gulp.task('default', () => 
+	gulp.src('src/*.js')
+		.pipe(babel({
+			presets: ['@babel/preset-env']
+		}))
+		.pipe(gulp.dest('dist'))
+);
+
 
 // Remove pre-existing content from output folders
 var cleanDist = function (done) {
