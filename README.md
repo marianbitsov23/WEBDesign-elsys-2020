@@ -1,21 +1,27 @@
-# Gulp Boilerplate [![Build Status](https://travis-ci.org/cferdinandi/gulp-boilerplate.svg)](https://travis-ci.org/cferdinandi/gulp-boilerplate)
+# Cartrek 
+**Online stylish autoshop. Supplying the biggest car dealerships in Sofia, Bulgaria.**
 
-A boilerplate for building web projects with [Gulp](https://gulpjs.com/). Uses Gulp 4.x.
+**Requirments**
 
-**Features**
+- Modern design
+- Fully responsive view (Mobile/Tablet)
+- Amazing animations
+- 2 level drop down menu
+- Old browser versions support
+- Gulp, Babel
+- Vanilla JS
 
-- Concatenate, minify, and lint JavaScript.
-- Compile, minify, autoprefix, and lint Sass.
-- Optimize SVGs.
-- Copy static files and folders into your `dist` directory.
-- Automatically add headers and project details to JS and CSS files.
-- Create polyfilled and non-polyfilled versions of JS files.
-- Watch for file changes, and automatically recompile build and reload webpages.
+**Site preview**
 
-**Gulp Boilerplate makes it easy to turn features on and off**, so you can reuse it for all of your projects without having to delete or modify tasks.
-
-
-
+#### Logo:
+![Лого](dist/images/cartrek.png)
+#### Landing page:
+![Landing page](https://i.ibb.co/d7MLZrH/landing.png)
+#### Home page:
+![Home page](https://i.ibb.co/dfN7575/home.png)
+#### Car page:
+![Car page](https://i.ibb.co/x5cYrgN/mobile.png)
+	
 ## Getting Started
 
 ### Dependencies
