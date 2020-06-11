@@ -37,7 +37,7 @@ Make sure these are installed first.
 
 **Try it out.** After installing, run `gulp` to compile some test files into the `dist` directory. Or, run `gulp watch` and make some changes to see them recompile automatically.
 
-
+**Or simply open it from here:** https://cartrek.netlify.app/
 
 ## Documentation
 
