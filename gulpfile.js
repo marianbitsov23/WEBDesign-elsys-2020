@@ -95,7 +95,8 @@ var browserSync = require('browser-sync');
  * Gulp Tasks
  */
 
-// Babel
+// Babel - NOT WORKING!
+/*
 gulp.task('default', () => 
 	gulp.src('src/*.js')
 		.pipe(babel({
@@ -103,6 +104,7 @@ gulp.task('default', () =>
 		}))
 		.pipe(gulp.dest('dist'))
 );
+*/
 
 
 // Remove pre-existing content from output folders
